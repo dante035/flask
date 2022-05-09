@@ -1,0 +1,102 @@
+body{margin:0;
+    background-color: black;
+    color: blanchedalmond;
+padding: 0%;font-family: Arial, Helvetica, sans-serif;}
+header{display: flex;
+flex-direction: column;}
+.navigation{
+    display: flex;
+    font-size: 1.2rem;
+}
+li{
+    list-style: none;
+    padding-left: .5rem; ;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+a{
+    text-decoration: none;
+    color: hsl(78, 85%, 50%);
+}
+
+header::before{
+    background: url('wp3214240-call-of-duty-modern-warfare-desktop-wallpapers.jpg') no-repeat center center/cover;
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 50%;
+}
+a:hover{
+    background: rgba(12, 11, 11, 0.5);
+    border-radius: 10px;
+    padding: 4px;
+}
+
+#box{
+    display: none;
+    background: rgba(20, 20, 20, 0.9) ;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+
+}
+.close{border: none ;
+background: transparent;float: right;color: whitesmoke;}
+#pop{background-color: #ffffff;
+    display: contents;
+line-height: 2rem;
+border-radius: .5rem;
+}
+label{color: goldenrod;
+    position: absolute;
+    left: .3rem;
+    font-size: .9rem;
+    pointer-events: none;
+    transition: .2s all;
+}
+input{border:none;outline: none; border-radius: .4rem;}
+.i{position: absolute; 
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+}
+.k:focus{border-bottom: 2px solid rgb(32, 10, 160);}
+.k:focus~label,
+.k:not(:placeholder-shown).k:not(:focus)~label{
+    font-size: 15px;
+    transition: .3 linear;
+    top: -1.2rem;
+}
+#btn{ border-radius: .5rem;
+background: limegreen;
+color: rgb(129, 25, 214);
+font-weight: 700;}
+.a{
+    background-color: #c5db92;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    box-sizing: content-box;
+}
+@keyframes al {
+    0%{ height: 4rem;border-radius: 1rem;}
+    50%{height: 1rem;border-radius: 1rem;}
+    100%{height: 4rem;border-radius: 1rem;}
+
+.f{
+    display: inline-block;
+    height: 1rem;
+    width: 1rem;
+    background-color: rgb(214, 235, 235);
+    border-radius: 100%;
+    transform: translate(-50%,-50%);
+    animation: al 4s infinite;
+}

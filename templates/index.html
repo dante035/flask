@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% block body %}
+<body>
+    <div id="box">
+        <div class="i" id="pop"><button class="close" onclick="off()">&#10006</button>
+            <div class="i">
+                <form onsubmit="ps()" method="get">
+                    <input id="pas" class="k" type="password" onclick="up()" placeholder=" ">
+                    <label for="pas">Password :</label>
+                    <br>
+                    <input type="submit" value="Login" >
+                </form>
+            </div>
+        </div>
+    </div>
+    <section>
+        <h1>Testing</h1>
+        <button id="btn" onclick="on()">SIGN UP</button>
+    </section>
+    <div class="a">
+        <span class="f"></span> <span class="f"></span> <span class="f"></span> <span class="f"></span>
+    </div>
+</body>
+{% endblock %}
