@@ -12,4 +12,4 @@ def contact():
 @app.route('/service')
 def service():
     return render_template('service.html')
-app.run(debug=True)
+app.run(debug=False,host='0.0.0.0')
